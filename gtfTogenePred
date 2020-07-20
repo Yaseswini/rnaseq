@@ -1,0 +1,5 @@
+gtfFile=<filepath_GTF>
+refFlat=<refFlat_GTF>
+gtfToGenePred -genePredExt -geneNameAsName2 genes.gtf refFlat.tmp.txt
+paste <(cut -f 12 refFlat.tmp.txt) <(cut -f 1-10 refFlat.tmp.txt) > refFlat.txt
+rm refFlat.tmp.txt
