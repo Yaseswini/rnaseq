@@ -1,0 +1,4 @@
+cd into ucsc_tools directory 
+./gff3ToGenePred <gff3_file> <genePred_file>
+./genePredToBed <genePred_file> <bed_file>
+
